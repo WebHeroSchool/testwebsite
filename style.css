@@ -13,3 +13,49 @@
 .section__main-title {
   font-family: 'PT Serif', serif;
 }
+
+body {
+  margin: 0;
+  border: dashed 1px blue;
+}
+
+.header,
+.main-content,
+.image-content {
+  border: dashed 1px blue;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  border: dashed 1px blue;
+}
+
+.logo {
+  padding: 40px 0;
+  border: dashed 1px blue;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu__item {
+  padding: 0 13px;
+  border: dashed 1px blue;
+}
+
+.menu__item_active {
+  border: dashed 1px blue;
+}
+
+.menu__item:last-child {
+  padding-right: 0;
+}
