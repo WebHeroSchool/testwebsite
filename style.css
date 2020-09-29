@@ -1,28 +1,39 @@
-.header__nav,
-.section__main-btn {
+.menu,
+.main-content__btn {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
 }
 
-.section__main-text {
+.main-content__subtitle {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
 
-.header__logo,
-.section__main-title {
+.logo,
+.main-content__title {
   font-family: 'PT Serif', serif;
+}
+
+.logo {
+  font-size: 24px;
+  padding: 40px 0;
+}
+
+.main-content__title {
+  font-size: 66px;
+}
+
+.main-content__subtitle {
+  font-size: 22px;
+  width: 420px;
+}
+
+.main-content__btn {
+  font-size: 18px;
 }
 
 body {
   margin: 0;
-  border: dashed 1px blue;
-}
-
-.header,
-.main-content,
-.image-content {
-  border: dashed 1px blue;
 }
 
 .header {
@@ -34,12 +45,6 @@ body {
 .wrapper {
   width: 80%;
   margin: 0 auto;
-  border: dashed 1px blue;
-}
-
-.logo {
-  padding: 40px 0;
-  border: dashed 1px blue;
 }
 
 .menu {
@@ -49,13 +54,17 @@ body {
 
 .menu__item {
   padding: 0 13px;
-  border: dashed 1px blue;
+  font-size: 18px;
 }
 
 .menu__item_active {
-  border: dashed 1px blue;
+  font-size: 18px;
 }
 
 .menu__item:last-child {
   padding-right: 0;
+}
+
+.main-section {
+  display: flex;
 }
