@@ -1,7 +1,7 @@
 .logo {
   font: bold 24px/31px 'pt_serifbold', arial, helvetica, serif;
   padding: 40px 0;
-  padding-left: 44px;
+  padding-left: 52px;
   position: relative;
 }
 
@@ -73,6 +73,6 @@ body {
 
 .logo__circle_blue {
   background-color: #c8dbfb;
-  left: 8px;
+  left: 16px;
   top: 56%;
 }
