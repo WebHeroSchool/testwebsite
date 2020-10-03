@@ -1,35 +1,21 @@
-.menu,
-.main-content__btn {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-}
-
-.main-content__subtitle {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-}
-
-.logo,
-.main-content__title {
-  font-family: 'PT Serif', serif;
-}
-
 .logo {
-  font-size: 24px;
+  font: bold 24px/31px 'pt_serifbold', arial, helvetica, serif;
   padding: 40px 0;
+  padding-left: 44px;
+  position: relative;
 }
 
 .main-content__title {
-  font-size: 66px;
+  font: bold 66px/87px 'pt_serifbold', arial, helvetica, serif;
 }
 
 .main-content__subtitle {
-  font-size: 22px;
+  font: medium 22px/26px 'robotomedium', arial, helvetica, sans-serif;
   width: 420px;
 }
 
 .main-content__btn {
-  font-size: 18px;
+  font: bold 18px/21px 'robotobold', arial, helvetica, sans-serif;
 }
 
 body {
@@ -54,11 +40,12 @@ body {
 
 .menu__item {
   padding: 0 13px;
-  font-size: 18px;
+  font: bold 18px/21px 'robotobold', sans-serif;
 }
 
 .menu__item_active {
-  font-size: 18px;
+  padding: 0 13px;
+  font: bold 18px/21px 'robotobold', sans-serif;
 }
 
 .menu__item:last-child {
@@ -67,4 +54,25 @@ body {
 
 .main-section {
   display: flex;
+}
+
+.logo__circle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  opacity: .7;
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+}
+
+.logo__circle_dark-blue {
+  background-color: #0056ec;
+}
+
+.logo__circle_blue {
+  background-color: #c8dbfb;
+  left: 8px;
+  top: 56%;
 }
