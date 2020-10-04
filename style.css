@@ -39,17 +39,31 @@ body {
 }
 
 .menu__item {
-  padding: 0 13px;
+  margin-right: 13px;
   font: bold 18px/21px 'robotobold', sans-serif;
+  text-decoration: none;
+  color: #000;
+  position: relative;
+
 }
 
-.menu__item_active {
-  padding: 0 13px;
-  font: bold 18px/21px 'robotobold', sans-serif;
-}
 
 .menu__item:last-child {
-  padding-right: 0;
+  margin-right: 0;
+}
+
+.menu__item:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background: #0056ec;
+  transition: opacity .5s, width 2s;
+}
+
+.menu__item:hover:after {
+  width: 100%
 }
 
 .main-section {
