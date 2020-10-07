@@ -24,7 +24,7 @@
   background: #0056ec;
   border-radius: 4px;
   color: #fff;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 body {
@@ -112,4 +112,25 @@ body {
 
 .main__title_highlight {
   background: #ecf3ff;
+}
+
+@media (max-width: 1920px) {
+  .wrapper {
+    width: 67%;
+  }
+
+  .menu__item {
+    font: bold 14px/16px 'robotobold', sans-serif;
+  }
+
+  .main__title {
+    font: bold 50px/66px 'pt_serifbold', arial, helvetica, serif;
+    width: 434px;
+  }
+
+  .main__subtitle {
+  font: normal 18px/21px 'robotomedium', arial, helvetica, sans-serif;
+  width: 367px;
+  margin: 0 0 41px 0;
+}
 }
