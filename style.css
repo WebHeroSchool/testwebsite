@@ -207,6 +207,10 @@ body {
   .menu__item:last-child {
     margin-right: 0;
   }
+
+  .logo {
+    padding-left: 46px;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -214,6 +218,10 @@ body {
   .logo,
   .circles {
     display: none;
+  }
+
+  .header {
+    margin-bottom: 20px;
   }
 
   .logo__mob {
@@ -244,21 +252,90 @@ body {
     top: 56%;
   }
 
-  .menu {
-    display: none;
-  }
-
   .menu__burger {
-    display: flex;
-    flex-direction: column;
-    height: 17px;
-    justify-content: space-between;
+    display: block;
   }
 
-  .menu__burger_item {
+  #menu__toggle {
+    opacity: 0;
+    position: absolute;
+  }
+
+  .menu__btn {
+    display: flex;
+    align-items: center;
     width: 25px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+  }
+
+  .menu__btn>span,
+  .menu__btn>span::before,
+  .menu__btn>span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
     height: 3px;
-    background: #0056ec;
+    background-color: #0056ec;
+  }
+
+  .menu__btn>span::before {
+    content: '';
+    top: -8px;
+  }
+
+  .menu__btn>span::after {
+    content: '';
+    top: 8px;
+  }
+
+  .menu {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 80px 0;
+    text-align: center;
+    background-color: #fff;
+    transition-duration: .2s;
+  }
+
+  .menu-item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .menu-item:hover {
+    background-color: #CFD8DC;
+  }
+
+  #menu__toggle:checked~.menu__btn>span {
+    transform: rotate(45deg);
+  }
+
+  #menu__toggle:checked~.menu__btn>span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+
+  #menu__toggle:checked~.menu__btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  #menu__toggle:checked~.menu {
+    visibility: visible;
+    left: 0;
+    z-index: 3;
   }
 
   .main__title {
@@ -282,10 +359,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-  }
-
-  .header {
-    margin-bottom: 20px;
   }
 
   .main__btn {
