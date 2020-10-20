@@ -150,7 +150,6 @@ body {
   animation: sheen 1s;
 }
 
-
 @keyframes sheen {
   from {
     transform: skewX(-45deg) translateX(-5em);
@@ -217,7 +216,8 @@ body {
 
 @media (max-width: 1023px) {
 
-  .logo__text {
+  .logo__text,
+  .circles {
     display: none;
   }
 
@@ -288,7 +288,7 @@ body {
   .menu {
     display: flex;
     flex-direction: column;
-    position: fixed;
+    position: absolute;
     visibility: hidden;
     top: 0;
     left: -100%;
