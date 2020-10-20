@@ -291,6 +291,7 @@ body {
     position: fixed;
     visibility: hidden;
     top: 0;
+    left: -100%;
     width: 100%;
     height: 100%;
     padding-top: 50%;
@@ -313,22 +314,32 @@ body {
     display: none;
   }
 
-  .menu-item:hover {
-    background-color: #CFD8DC;
+  .menu__item:after {
+    display: none;
+  }
+
+  .menu__item:hover {
+    background: rgba(0, 86, 236, .5);
+    width: 25%;
+    border-radius: 15px;
+
   }
 
   #menu__toggle:checked~.menu__btn>span {
     transform: rotate(45deg);
+    transition-duration: .2s;
   }
 
   #menu__toggle:checked~.menu__btn>span::before {
     top: 0;
     transform: rotate(0);
+    transition-duration: .2s;
   }
 
   #menu__toggle:checked~.menu__btn>span::after {
     top: 0;
     transform: rotate(90deg);
+    transition-duration: .2s;
   }
 
   #menu__toggle:checked~.menu {
